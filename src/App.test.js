@@ -10,3 +10,8 @@ describe("Totalizador", () => {
     expect(impuesto(1000, "UT")).toEqual(66.5);
   });
 });
+describe("Totalizador", () => {
+  it("Deberia mostrar monto total de cantidad x precio + el impuesto", () => {
+    expect(sumar(1000, 66.5)).toEqual(1066.5);
+  });
+});
