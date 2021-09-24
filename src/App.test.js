@@ -1,7 +1,8 @@
-import sumar from "./App.js";
+//import sumar from "./App.js";
+import precioTotal from "./App";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Totalizador", () => {
+  it("Deberia mostrar precio total de cantidad x precio", () => {
+    expect(precioTotal(3, 2)).toEqual(6);
   });
 });
