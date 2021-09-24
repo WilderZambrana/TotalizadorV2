@@ -2,4 +2,8 @@ function precioTotal(cantidad, precio) {
   return cantidad * precio;
 }
 
-export default precioTotal;
+function impuesto(precioTotal,estado) {
+
+}
+
+export { precioTotal, impuesto };
