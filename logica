@@ -28,7 +28,6 @@ function precioTotal(cantidad,precio){
 function ImpFORstate(valorcompra, valueState) {
     let valorImpuestos=0;
     let res;
-    //let res = precioTotal(cantidad.value, precio.value);
     switch (valueState) {
         case 'UT':
             valorImpuestos = 0.0665;
