@@ -1,9 +1,5 @@
-/*function sumar(a, b) {
-  return a + b;
-}*/
-
-function precioTotal(a, b) {
-  return a * b;
+function precioTotal(cantidad, precio) {
+  return cantidad * precio;
 }
 
 export default precioTotal;

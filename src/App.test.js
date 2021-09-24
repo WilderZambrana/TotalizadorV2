@@ -1,4 +1,3 @@
-//import sumar from "./App.js";
 import precioTotal from "./App";
 
 describe("Totalizador", () => {
