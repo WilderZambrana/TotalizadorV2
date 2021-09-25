@@ -20,3 +20,8 @@ describe("Totalizador", () => {
     expect(descuento(2000)).toEqual(60);
   });
 });
+describe("Totalizador", () => {
+  it("Deberia mostrar monto final: cant*prec + impuesto - descuento", () => {
+    expect(restar(2000,60)).toEqual(1400);
+  });
+});
