@@ -29,4 +29,29 @@ function impuesto(valor, estado) {
 function sumar(valor, valorImpuesto) {
   return valor + valorImpuesto;
 }
-export { precioTotal, impuesto, sumar };
+
+function descuento(valor) {
+  let valorDescuento = 0;
+  if (valor > 30000) {
+    valorDescuento = 0.15;
+  } else {
+    if (valor > 10000) {
+      valorDescuento = 0.1;
+    } else {
+      if (valor > 7000) {
+        valorDescuento = 0.07;
+      } else {
+        if (valor > 3000) {
+          valorDescuento = 0.05;
+        } else {
+          if (valor > 1000) {
+            valorDescuento = 0.03
+          }
+        }
+      }
+    }
+  }
+  return valor * valorDescuento;
+}
+
+export { precioTotal, impuesto, sumar, descuento };

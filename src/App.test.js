@@ -1,4 +1,4 @@
-import { precioTotal, impuesto, sumar } from "./App";
+import { precioTotal, impuesto, sumar, descuento } from "./App";
 
 describe("Totalizador", () => {
   it("Deberia mostrar precio total de cantidad x precio", () => {
@@ -17,6 +17,6 @@ describe("Totalizador", () => {
 });
 describe("Totalizador", () => {
   it("Deberia mostrar monto del descuento", () => {
-    expect(descuento(1000)).toEqual(30);
+    expect(descuento(2000)).toEqual(60);
   });
 });

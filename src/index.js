@@ -1,4 +1,4 @@
-import { precioTotal, impuesto, sumar } from "./App";
+import { precioTotal, impuesto, sumar, descuento } from "./App";
 
 const cantidad_input = document.querySelector("#cantidad-input");
 const precio_input = document.querySelector("#precio-input");
@@ -13,13 +13,16 @@ form.addEventListener("submit", (event) => {
   const estado = estado_input.value;
 
   const precioInicial = precioTotal(cantidad, precio);
-  const valorImpuesto=impuesto(precioInicial, estado);
+  const valorImpuesto = impuesto(precioInicial, estado);
+  const totalConImpu = sumar(precioInicial, valorImpuesto);
+  const valorDescuento = descuento(totalConImpu);
 
   document.getElementById('cantidad').innerHTML = cantidad;
   document.getElementById('precio').innerHTML = precio;
   document.getElementById('totalCantxPrec').innerHTML = precioInicial;
   document.getElementById('impuesto').innerHTML = valorImpuesto;
-  document.getElementById('totalConImp').innerHTML = sumar(precioInicial,valorImpuesto);
+  document.getElementById('totalConImp').innerHTML = totalConImpu;
+  document.getElementById('descuento').innerHTML = valorDescuento;
 });
 
 
