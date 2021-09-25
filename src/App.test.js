@@ -1,4 +1,4 @@
-import { precioTotal, impuesto } from "./App";
+import { precioTotal, impuesto, sumar } from "./App";
 
 describe("Totalizador", () => {
   it("Deberia mostrar precio total de cantidad x precio", () => {
