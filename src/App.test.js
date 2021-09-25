@@ -15,3 +15,8 @@ describe("Totalizador", () => {
     expect(sumar(1000, 66.5)).toEqual(1066.5);
   });
 });
+describe("Totalizador", () => {
+  it("Deberia mostrar monto del descuento", () => {
+    expect(descuento(1000)).toEqual(30);
+  });
+});
