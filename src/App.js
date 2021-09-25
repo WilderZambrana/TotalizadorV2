@@ -54,4 +54,8 @@ function descuento(valor) {
   return valor * valorDescuento;
 }
 
-export { precioTotal, impuesto, sumar, descuento };
+function restar(valorCImp, valorDesc) {
+  return valorCImp - valorDesc;
+}
+
+export { precioTotal, impuesto, sumar, descuento, restar };
