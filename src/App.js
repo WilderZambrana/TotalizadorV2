@@ -26,4 +26,7 @@ function impuesto(valor, estado) {
   return valor * valorImpuestos;
 }
 
-export { precioTotal, impuesto };
+function sumar(a, b) {
+  return a + b;
+}
+export { precioTotal, impuesto, sumar };
